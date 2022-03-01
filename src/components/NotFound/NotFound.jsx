@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../NotFound/NotFound.css";
-import notFound from "../assets/img/ScreenShot.png";
+import notFound from "../assets/img/not_found_img.png";
 const NotFound = () => {
   const navigate = useNavigate();
   return (
