@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import AddProduct from "./components/Product/AddProduct";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -42,6 +43,11 @@ const MainRoutes = () => {
     {
       link: "/aboutUs",
       element: <AboutUsPage />,
+      id: 6,
+    },
+    {
+      link: "/adminpanel",
+      element: <AddProduct />,
       id: 6,
     },
   ];
