@@ -9,10 +9,10 @@ import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 const MainRoutes = () => {
   const { user } = useAuth();
-  console.log(user);
   const PUBLIC_ROUTES = [
     {
       link: "/",
@@ -38,6 +38,11 @@ const MainRoutes = () => {
       link: "*",
       element: <NotFoundPage />,
       id: 5,
+    },
+    {
+      link: "/aboutUs",
+      element: <AboutUsPage />,
+      id: 6,
     },
   ];
 

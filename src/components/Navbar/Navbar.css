@@ -1,0 +1,12 @@
+#button {
+  color: white;
+}
+#navbar_color {
+  background-color: rgb(125, 142, 125);
+}
+/* .navbar_color.active {
+  background-color: rgb(125, 142, 125) !important;
+} */
+a {
+  text-decoration: none;
+}
