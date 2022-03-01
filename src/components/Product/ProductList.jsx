@@ -38,7 +38,7 @@ const ProductList = ({ products }) => {
   }, [search]);
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", background: "#FCF6EC" }}>
       {/* <SideBar /> */}
       <div>
         <TextField
