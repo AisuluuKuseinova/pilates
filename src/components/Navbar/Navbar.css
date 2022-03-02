@@ -2,11 +2,12 @@
   color: white;
 }
 #navbar_color {
-  background-color: rgb(125, 142, 125);
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
-/* .navbar_color.active {
+#active {
   background-color: rgb(125, 142, 125) !important;
-} */
+}
 a {
   text-decoration: none;
 }

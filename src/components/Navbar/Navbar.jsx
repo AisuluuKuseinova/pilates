@@ -47,20 +47,17 @@ const Navbar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  //   const changeBackground = () => {
-  //     if (window.scrollY <= 80) {
-  //       setNavbar(true);
-  //     } else {
-  //       setNavbar(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", changeBackground);
+  const changeBackground = () => {
+    if (window.scrollY <= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <AppBar
-      /*className={navbar ? "navbar_color" : "active"}*/ id="navbar_color"
-      position="static"
-    >
+    <AppBar id={navbar ? "navbar_color" : "active"} position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
@@ -191,6 +188,7 @@ const Navbar = () => {
                   my: 2,
                   display: "block",
                   fontFamily: "Cormorant Garamond",
+                  bgcolor: "rgb(125, 142, 125)",
                 }}
                 onClick={handleLogout}
               >

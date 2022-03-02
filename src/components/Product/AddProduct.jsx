@@ -2,6 +2,7 @@ import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
+import notFound from "../assets/img/not_found_img.png";
 
 const AddProduct = () => {
   const { addProduct } = useProducts();
@@ -35,7 +36,16 @@ const AddProduct = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#FCF6EC", height: "100vh", padding: "20vh auto" }}>
+    <Box
+      sx={{
+        bgcolor: "#FCF6EC",
+        height: "100vh",
+        padding: "20vh auto",
+        backgroundImage: `url(${notFound})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "norepeat",
+      }}
+    >
       <center variant="h6" gutterBottom>
         <h2 sx={{ fontFamily: "Cormorant Garamond" }}>WELCOME, ADMIN!</h2>
         <h3>Add a new course!</h3>

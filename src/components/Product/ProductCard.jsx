@@ -19,28 +19,28 @@ export default function MediaCard({ item }) {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      sx={{
+        maxWidth: 345,
+        bgcolor: "rgb(125, 142, 125)",
+      }}
+    >
       <CardMedia
         component="img"
         height="200"
         width="200"
         image={item.picture}
-        alt="green iguana"
-        color="rgb(125, 142, 125)"
+        alt="picture"
+        color=" #FCF6EC"
       />
       <CardContent>
-        <Typography
-          gutterBottom
-          variant="h5"
-          color=" rgb(125, 142, 125)"
-          component="div"
-        >
+        <Typography gutterBottom variant="h5" color=" #FCF6EC" component="div">
           {item.name}
         </Typography>
-        <Typography variant="body2" color=" rgb(125, 142, 125)">
+        <Typography variant="body2" color=" #FCF6EC">
           {item.description}
         </Typography>
-        <Typography variant="body2" color=" rgb(125, 142, 125)">
+        <Typography variant="body2" color=" #FCF6EC">
           {item.price}
         </Typography>
       </CardContent>

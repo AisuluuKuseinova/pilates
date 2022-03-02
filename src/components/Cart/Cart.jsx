@@ -10,6 +10,7 @@ import Paper from "@mui/material/Paper";
 import { useProducts } from "../../contexts/ProductContext";
 import { Button } from "@mui/material";
 import "../Cart/Cart.css";
+import { useNavigate } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -68,6 +69,7 @@ export default function Cart() {
       changeProductCount(count, id);
     }
   };
+  const navigate = useNavigate();
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -121,7 +123,11 @@ export default function Cart() {
         </TableBody>
       </Table>
 
-      <Button id="btnBuy" onClick={cartCleaner}>
+      <Button
+        id="btnBuy"
+        onClick={() => navigate("/payment")}
+        // onClick={cartCleaner}
+      >
         BUY NOW FOR {cart.totalPrice}$
       </Button>
     </TableContainer>

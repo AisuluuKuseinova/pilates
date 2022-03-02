@@ -44,7 +44,8 @@ const ProductList = ({ products }) => {
         <TextField
           label="Search"
           variant="standard"
-          sx={{ margin: "2vw", width: "35vw" }}
+          color="success"
+          sx={{ margin: "7vw", width: "35vw" }}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

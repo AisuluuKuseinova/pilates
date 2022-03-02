@@ -11,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import AddProduct from "./components/Product/AddProduct";
+import PaymentPage from "./pages/PaymentPage";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -49,6 +50,11 @@ const MainRoutes = () => {
       link: "/adminpanel",
       element: <AddProduct />,
       id: 6,
+    },
+    {
+      link: "/payment",
+      element: <PaymentPage />,
+      id: 7,
     },
   ];
 
