@@ -21,14 +21,14 @@ export default function MediaCard({ item }) {
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: 450,
         bgcolor: "rgb(125, 142, 125)",
       }}
     >
       <CardMedia
         component="img"
-        height="200"
-        width="200"
+        height="300"
+        width="500"
         image={item.picture}
         alt="picture"
         color=" #FCF6EC"
@@ -41,7 +41,7 @@ export default function MediaCard({ item }) {
           {item.description}
         </Typography>
         <Typography variant="body2" color=" #FCF6EC">
-          {item.price}
+          {item.price} $
         </Typography>
       </CardContent>
       <CardActions>

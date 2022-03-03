@@ -16,6 +16,7 @@ import { ADMIN } from "../../sos/consts";
 import "./Navbar.css";
 import { Badge } from "@mui/material";
 import { useProducts } from "../../contexts/ProductContext";
+import logo from "../assets/img/logo.png";
 
 const pages = [
   { name: "COURSES", link: "/products", id: 1 },
@@ -66,7 +67,9 @@ const Navbar = () => {
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-            ></Typography>
+            >
+              <img id="logo" src={logo} alt=""></img>
+            </Typography>
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -137,7 +140,7 @@ const Navbar = () => {
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
-                    color: "#FCF6EC",
+                    color: "black",
                     display: "block",
                     fontSize: 12,
                     fontFamily: "Cormorant Garamond",
@@ -154,7 +157,7 @@ const Navbar = () => {
                 <Button
                   sx={{
                     my: 2,
-                    color: "#FCF6EC",
+                    color: "black",
                     display: "block",
                     fontSize: 12,
                     fontFamily: "Cormorant Garamond",
@@ -165,7 +168,7 @@ const Navbar = () => {
               </Link>
             ) : (
               <Link to="/cart">
-                <Button sx={{ my: 2, color: "white" }}>
+                <Button sx={{ my: 2, color: "black" }}>
                   <Badge
                     badgeContent={cart?.products ? cart.products.length : 0}
                     color="secondary"
@@ -199,7 +202,7 @@ const Navbar = () => {
             {email ? null : (
               <Link to="/auth">
                 <Button
-                  id="button"
+                  id="button1"
                   variant="outlined"
                   color="success"
                   sx={{

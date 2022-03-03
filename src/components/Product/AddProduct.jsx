@@ -40,7 +40,7 @@ const AddProduct = () => {
       sx={{
         bgcolor: "#FCF6EC",
         height: "100vh",
-        padding: "20vh auto",
+        paddingTop: "100px",
         backgroundImage: `url(${notFound})`,
         backgroundSize: "cover",
         backgroundRepeat: "norepeat",
@@ -112,11 +112,11 @@ const AddProduct = () => {
             margin="dense"
             onChange={handleInp}
           />
-          <Stack direction="row" spacing={2} sx={{ bgcolor: "#004d40" }}>
+          <Stack direction="row" spacing={2} sx={{ bgcolor: "#FCF8EC" }}>
             <Button
               id="button"
               sx={{
-                bgcolor: "#263238",
+                bgcolor: "#white",
                 borderColor: "error.main",
                 fontFamily: "Cormorant Garamond",
               }}

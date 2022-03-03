@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "../Product/ProductCard";
 
-// import SideBar from "../SideBar/SideBar";
+import SideBar from "../Sidebar/Side";
 
 const ProductList = ({ products }) => {
   const { getProducts } = useProducts();
@@ -39,7 +39,7 @@ const ProductList = ({ products }) => {
 
   return (
     <div style={{ display: "flex", background: "#FCF6EC" }}>
-      {/* <SideBar /> */}
+      <SideBar />
       <div>
         <TextField
           label="Search"

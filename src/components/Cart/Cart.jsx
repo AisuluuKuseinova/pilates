@@ -72,7 +72,10 @@ export default function Cart() {
   const navigate = useNavigate();
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table
+        sx={{ minWidth: 700, marginTop: "15vh" }}
+        aria-label="customized table"
+      >
         <TableHead>
           <TableRow>
             <StyledTableCell>Picture</StyledTableCell>
@@ -114,7 +117,10 @@ export default function Cart() {
               </StyledTableCell>{" "}
               <StyledTableCell align="right">{row.subPrice}</StyledTableCell>
               <StyledTableCell align="right">
-                <Button onClick={() => deleteCartProducts(row.item.id)}>
+                <Button
+                  color="success"
+                  onClick={() => deleteCartProducts(row.item.id)}
+                >
                   Delete
                 </Button>
               </StyledTableCell>
@@ -122,14 +128,14 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-
-      <Button
-        id="btnBuy"
-        onClick={() => navigate("/payment")}
-        // onClick={cartCleaner}
-      >
-        BUY NOW FOR {cart.totalPrice}$
-      </Button>
+      <div className="buttons">
+        <Button id="btnBuy" onClick={() => navigate("/payment")}>
+          BUY NOW FOR {cart.totalPrice}$
+        </Button>
+        <Button id="btnClear" onClick={cartCleaner}>
+          Clear Cart
+        </Button>
+      </div>
     </TableContainer>
   );
 }
