@@ -19,40 +19,56 @@ export default function MediaCard({ item }) {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      sx={{
+        maxWidth: 450,
+        bgcolor: "rgb(125, 142, 125)",
+      }}
+    >
       <CardMedia
         component="img"
-        height="140"
+        height="300"
+        width="500"
         image={item.picture}
-        alt="green iguana"
+        alt="picture"
+        color=" #FCF6EC"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" color=" #FCF6EC" component="div">
           {item.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color=" #FCF6EC">
           {item.description}
+        </Typography>
+        <Typography variant="body2" color=" #FCF6EC">
+          {item.price} $
         </Typography>
       </CardContent>
       <CardActions>
         {email === ADMIN ? (
           <>
-            <Button size="small" onClick={() => deleteProduct(item.id)}>
+            <Button
+              sx={{ bgcolor: "#FCF6EC", color: " rgb(125, 142, 125)" }}
+              size="small"
+              onClick={() => deleteProduct(item.id)}
+            >
               DELETE
             </Button>
-            <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+            <Button
+              sx={{ bgcolor: "#FCF6EC", color: " rgb(125, 142, 125)" }}
+              size="small"
+              onClick={() => navigate(`/edit/${item.id}`)}
+            >
               EDIT
             </Button>
           </>
         ) : (
           <IconButton onClick={() => addProductToCart(item)}>
             <ShoppingCartIcon
-              color={checkProductInCart(item.id) ? "secondary" : ""}
+              color={checkProductInCart(item.id) ? "success" : ""}
             />
           </IconButton>
         )}
-
-        <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
       </CardActions>
     </Card>
   );

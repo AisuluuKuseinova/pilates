@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "name": "CLINICAL PILATES",
+      "description": "Clinical Pilates is a form of physical exercise that focuses on posture, core stability, balance, control, and breathing. The Pilates Method was developed by Joseph Pilates in the early 20th.",
+      "price": "40",
+      "picture": "https://images.squarespace-cdn.com/content/v1/59d5ec9490bade831ced08f7/1538035159229-LQOB531PS239CT2MBR5Q/karen+nairobi+physio+reformer+pilates+treatment+.jpg",
+      "type": "clinical",
+      "id": 1
+    },
+    {
+      "name": "MAT PILATES",
+      "description": "Mat Pilates is based on the original exercises Joseph Pilates developed to strengthen his own body as a very young man and then began teaching others.",
+      "price": "30",
+      "picture": "https://images.pilatesanytime.com/2018/07/12/full_1600x616_yumi-90763.jpg",
+      "type": "mat",
+      "id": 2
+    },
+    {
+      "name": "CLASSICAL PILATES",
+      "description": "The Classical Pilates workout includes a mat, reformer, and typically two additional pieces of equipment workout to improve, intensify, and address unique body challenges.",
+      "price": "35",
+      "picture": "https://i.pinimg.com/564x/f4/72/c7/f472c78be10ed69a5a78ffbaa46034ed.jpg",
+      "type": "classical",
+      "id": 3
+    },
+    {
+      "name": "GROUP REFORMER PILATES",
+      "description": "A reformer is an apparatus designed with a system of springs and pulleys that allows an exercise to become more accessible or more challenging based on the choice of setup",
+      "price": "40",
+      "picture": "https://i.pinimg.com/564x/21/f9/1c/21f91c490f6b72105409f62f2517ed37.jpg",
+      "type": "group reformer",
+      "id": 4
+    }
+  ]
+}

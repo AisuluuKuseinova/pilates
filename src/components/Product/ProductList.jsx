@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "../Product/ProductCard";
 
-// import SideBar from "../SideBar/SideBar";
+import SideBar from "../Sidebar/Side";
 
 const ProductList = ({ products }) => {
   const { getProducts } = useProducts();
@@ -38,13 +38,14 @@ const ProductList = ({ products }) => {
   }, [search]);
 
   return (
-    <div style={{ display: "flex" }}>
-      {/* <SideBar /> */}
+    <div style={{ display: "flex", background: "#FCF6EC" }}>
+      <SideBar />
       <div>
         <TextField
           label="Search"
           variant="standard"
-          sx={{ margin: "2vw", width: "35vw" }}
+          color="success"
+          sx={{ margin: "7vw", width: "35vw" }}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

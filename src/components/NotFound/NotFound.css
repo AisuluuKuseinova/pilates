@@ -8,11 +8,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  backdrop-filter: blur(3px);
   flex-direction: column;
   color: white;
 }
 .notFoundImg {
   width: 100vw;
   height: 100vh;
+  background: rgb(159, 163, 142);
 }

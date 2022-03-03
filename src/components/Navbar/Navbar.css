@@ -1,0 +1,24 @@
+#button {
+  color: black;
+}
+#button1 {
+  color: black;
+}
+#navbar_color {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+#active {
+  background-color: rgb(125, 142, 125) !important;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 5vw;
+}
+#logo {
+  width: 7vw;
+  margin-left: 1vh;
+  border-radius: 100%;
+}
