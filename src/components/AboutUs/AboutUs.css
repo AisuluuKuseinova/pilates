@@ -5,8 +5,9 @@ a {
 }
 
 .aboutUs {
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  max-width: auto;
   background: url("../assets/img/aboutuss.jpg") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
