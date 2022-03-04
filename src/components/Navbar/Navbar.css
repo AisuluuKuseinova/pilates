@@ -10,6 +10,7 @@
 }
 #active {
   background-color: rgb(125, 142, 125) !important;
+  height: 13.5vh;
 }
 a {
   text-decoration: none;
@@ -18,7 +19,8 @@ img {
   width: 5vw;
 }
 #logo {
-  width: 7vw;
-  margin-left: 1vh;
+  width: 6vw;
+  margin-left: 2vh;
+  margin-top: 0.3vh;
   border-radius: 100%;
 }

@@ -142,7 +142,7 @@ const Navbar = () => {
                     my: 2,
                     color: "black",
                     display: "block",
-                    fontSize: 12,
+                    fontSize: 14,
                     fontFamily: "Cormorant Garamond",
                   }}
                 >

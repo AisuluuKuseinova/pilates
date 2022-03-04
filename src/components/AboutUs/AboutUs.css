@@ -17,7 +17,7 @@ a {
   margin-top: 3vw;
   padding: 3vh 5vw;
   background: rgb(247, 240, 231);
-  border-radius: 60%;
+  border-radius: 80%;
   color: black;
 }
 
@@ -27,7 +27,7 @@ a {
   background-image: url("../assets/img/pilates.png");
   background-size: cover;
   background-repeat: no-repeat !important;
-  background-color: rgb(159, 163, 142);
+  background-color: rgb(125, 142, 125);
 }
 
 .pilates-text {
@@ -59,7 +59,7 @@ a {
 .linee {
   width: 45vw;
   height: 0.5vh;
-  background: rgb(159, 163, 142);
+  background: rgb(125, 142, 125);
   margin: 10px auto;
   border-radius: 5px;
 }
@@ -78,12 +78,12 @@ section {
 .title {
   text-align: center;
   font-size: 7vmin;
-  color: rgb(159, 163, 142);
+  color: rgb(125, 142, 125);
 }
 .col p {
   text-align: center;
   font-size: 4vmin;
-  color: rgb(159, 163, 142);
+  color: rgb(125, 142, 125);
 }
 .right {
   display: flex;
@@ -131,7 +131,7 @@ section {
   justify-content: center;
   flex-direction: column;
   background-image: url("../assets/img/practice.png");
-  background-color: rgb(159, 163, 142);
+  background-color: rgb(125, 142, 125);
   background-repeat: no-repeat !important;
 }
 .practice-text h1 {
@@ -146,12 +146,12 @@ section {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: rgb(159, 163, 142);
+  background: rgb(125, 142, 125);
 }
 .ctnn {
   margin-top: 3vw;
   padding: 3vh 5vw;
   background: rgb(247, 240, 231);
-  border-radius: 60%;
+  border-radius: 80%;
   color: black;
 }

@@ -2,7 +2,7 @@
   position: relative;
   height: 50vh;
   width: 100vw;
-  background: rgb(243, 241, 226);
+  background: rgb(247, 240, 231);
   padding-top: 5vh;
 }
 .footer__text {
@@ -55,7 +55,7 @@ ol {
   border-radius: 100%;
 }
 .footer {
-  background: rgb(243, 241, 226);
+  background: rgb(247, 240, 231);
 }
 .teg_a {
   color: rgb(130, 134, 110);
