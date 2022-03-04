@@ -7,6 +7,7 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
+
 import React from "react";
 import { useProducts } from "../../contexts/ProductContext";
 import "./Side.css";
@@ -18,11 +19,10 @@ const SideBar = () => {
       <Paper>
         <FormControl>
           <RadioGroup
-            sx={{ dataAos: "fade-up-right" }}
+            row
             className="side-bar"
             onChange={(e) => fetchByParams("type", e.target.value)}
           >
-            <h5 className="choose-type">TYPE</h5>
             <FormControlLabel
               value="mat"
               control={<Radio />}
@@ -43,7 +43,6 @@ const SideBar = () => {
               control={<Radio />}
               label="GROUP REFORMER PILATES"
             />
-
             <FormControlLabel value="all" control={<Radio />} label="ALL" />
           </RadioGroup>
         </FormControl>

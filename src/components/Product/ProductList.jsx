@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "../Product/ProductCard";
 
-import SideBar from "../Sidebar/Side";
+import Side from "../Sidebar/Side";
 
 const ProductList = ({ products }) => {
   const { getProducts } = useProducts();
@@ -38,17 +38,23 @@ const ProductList = ({ products }) => {
   }, [search]);
 
   return (
-    <div style={{ display: "flex", background: "#FCF6EC" }}>
-      <SideBar />
+    <div
+      style={{
+        background: "#FCF6EC",
+      }}
+    >
+      <Side />
       <div>
-        <TextField
-          label="Search"
-          variant="standard"
-          color="success"
-          sx={{ margin: "7vw", width: "35vw" }}
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <section>
+          <TextField
+            label="Search"
+            variant="standard"
+            color="success"
+            sx={{ margin: "4vw", width: "25vw" }}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </section>
         <Grid container spacing={6}>
           {products ? (
             products.map((item) => (
