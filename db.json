@@ -9,28 +9,36 @@
       "id": 1
     },
     {
-      "name": "MAT PILATES",
-      "description": "Mat Pilates is based on the original exercises Joseph Pilates developed to strengthen his own body as a very young man and then began teaching others.",
-      "price": "30",
-      "picture": "https://images.pilatesanytime.com/2018/07/12/full_1600x616_yumi-90763.jpg",
-      "type": "mat",
-      "id": 2
-    },
-    {
-      "name": "CLASSICAL PILATES",
-      "description": "The Classical Pilates workout includes a mat, reformer, and typically two additional pieces of equipment workout to improve, intensify, and address unique body challenges.",
-      "price": "35",
-      "picture": "https://i.pinimg.com/564x/f4/72/c7/f472c78be10ed69a5a78ffbaa46034ed.jpg",
-      "type": "classical",
-      "id": 3
-    },
-    {
       "name": "GROUP REFORMER PILATES",
       "description": "A reformer is an apparatus designed with a system of springs and pulleys that allows an exercise to become more accessible or more challenging based on the choice of setup",
       "price": "40",
       "picture": "https://i.pinimg.com/564x/21/f9/1c/21f91c490f6b72105409f62f2517ed37.jpg",
       "type": "group reformer",
       "id": 4
+    },
+    {
+      "name": "MAT PILATES/ night",
+      "description": "Mat Pilates is based on the original exercises Joseph Pilates developed to strengthen his own body as a very young man and then began teaching others, unique body challenges.",
+      "price": "50",
+      "picture": "https://img.freepik.com/free-photo/hand-mudra-gesture-close-up-people-easy-seat-pose_1163-4934.jpg?size=626&ext=jpg",
+      "type": "mat",
+      "id": 5
+    },
+    {
+      "name": "MAT PILATES",
+      "description": "Mat Pilates is based on the original exercises Joseph Pilates developed to strengthen his own body as a very young man and then began teaching others.",
+      "price": "80",
+      "picture": "https://images.pilatesanytime.com/2018/07/12/full_1600x616_yumi-90763.jpg",
+      "type": "mat",
+      "id": 6
+    },
+    {
+      "name": "MAT PILATES",
+      "description": "In the original Classical Pilates method there is a sequence to the work, which was designed to move the body through a full range of movement. The sequence builds intelligently with foundational exercises at the beginning and more complex exercises as you gain strength and control,she adds.",
+      "price": 40,
+      "picture": "https://images.pilatesanytime.com/2018/07/12/full_1600x616_yumi-90763.jpg",
+      "type": "mat",
+      "id": 7
     }
   ]
 }

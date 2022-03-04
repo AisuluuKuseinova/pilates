@@ -1,7 +1,6 @@
 import {
   FormControl,
   FormControlLabel,
-  FormLabel,
   Grid,
   Paper,
   Radio,

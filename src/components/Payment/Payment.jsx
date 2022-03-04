@@ -1,10 +1,10 @@
 import { Button } from "@mui/material";
 import React from "react";
-// import "./paycard.css";
+import "../Payment/Payment.css";
 
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class PaymentForm extends React.Component {
   state = {
@@ -25,9 +25,6 @@ export default class PaymentForm extends React.Component {
   };
 
   render() {
-    // const handleClick = () => {
-    //   alert("fgh");
-    // };
     return (
       <div>
         <div
@@ -89,12 +86,12 @@ export default class PaymentForm extends React.Component {
             <br />
             <Link to="/products">
               <Button
-                // onClick={handleClick}
                 className="grid-button"
                 variant="contained"
+                color="success"
                 sx={{
                   color: "white",
-                  background: "gray",
+                  background: "rgb(125, 142, 125)",
                 }}
               >
                 Confirm Payment

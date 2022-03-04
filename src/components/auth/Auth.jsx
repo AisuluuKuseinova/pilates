@@ -40,10 +40,14 @@ export default function Login() {
             alignItems: "center",
           }}
         >
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" color="default">
             Sign in
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 1 }}>
+          <Box
+            component="form"
+            noValidate
+            sx={{ mt: 1, color: "rgb(125, 142, 125)" }}
+          >
             <TextField
               margin="normal"
               required
@@ -77,7 +81,7 @@ export default function Login() {
             />
 
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={<Checkbox value="remember" color="default" />}
               label="Remember me"
             />
 
@@ -86,7 +90,7 @@ export default function Login() {
                 type="button"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2, bgcolor: "rgb(125, 142, 125)" }}
                 onClick={handleLogin}
               >
                 Sign In
@@ -96,7 +100,7 @@ export default function Login() {
                 type="button"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2, bgcolor: "rgb(125, 142, 125)" }}
                 onClick={handleSignUp}
               >
                 Sign Up
@@ -117,6 +121,7 @@ export default function Login() {
                   <Link
                     href="#"
                     variant="body2"
+                    color="rgb(125, 142, 125)"
                     onClick={() => setHasAccount(!hasAccount)}
                   >
                     {"Have an account? Sign In"}

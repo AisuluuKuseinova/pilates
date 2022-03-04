@@ -22,11 +22,11 @@ video {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .row img {
   height: 55vh;
-  width: auto;
+  width: 100vw;
   border: 0.5vh solid rgb(125, 142, 125);
   background: 100% no-repeat;
   background-size: cover;
